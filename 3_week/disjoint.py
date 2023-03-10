@@ -19,8 +19,6 @@ def disjoint2(A, B, C):
 						return False
 	return True
 
-
-
 A = []
 B = []
 C = []
@@ -31,7 +29,13 @@ for val in range (0,100):
 	C.append(random.randint(0,1000))
 
 start_time = time()
+print(disjoint1(A, B, C))
+end_time = time()
+run_time = end_time - start_time
+print("disjoint1 : ", run_time)
+
+start_time = time()
 print(disjoint2(A, B, C))
 end_time = time()
 run_time = end_time - start_time
-print(run_time)
+print("disjoint2 : ", run_time)
